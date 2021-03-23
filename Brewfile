@@ -1,8 +1,10 @@
 tap "heroku/brew"
 
 brew "asdf"
+brew "bat"
 brew "coreutils"
 brew "curl"
+brew "fd"
 brew "fish"
 brew "fzf"
 brew "gh"
