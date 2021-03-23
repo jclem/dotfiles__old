@@ -1,0 +1,25 @@
+[alias]
+	aa = add --all
+	cm = commit
+	co = checkout
+	df = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --
+	pl = pull
+	ps = push
+	st = status
+[commit]
+	gpgSign = true
+[credential]
+	helper = osxkeychain
+[diff]
+	mnemonicPrefix = true
+	renames = copies
+[include]
+	path = ~/.gitconfig_local
+[init]
+	defaultBranch = main
+[rerere]
+	enabled = true
+[user]
+	email = jonathan@jclem.net
+	name = Jonathan Clem

@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "config": "properties",
+        "ignore": "ignore",
+        "local": "properties"
+    },
+    "files.exclude": {
+        "fish/fish_variables": true
+    }
+}
