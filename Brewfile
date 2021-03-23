@@ -1,5 +1,7 @@
 tap "heroku/brew"
 
+brew "coreutils"
+brew "curl"
 brew "fish"
 brew "gh"
 brew "git"
