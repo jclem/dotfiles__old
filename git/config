@@ -7,6 +7,11 @@
 	pl = pull
 	ps = push
 	st = status
+[bash]
+	showDirtyState = true
+	showInformativeStatus = true
+	showUntrackedFiles = true
+	showUpstream = auto
 [commit]
 	gpgSign = true
 [credential]
