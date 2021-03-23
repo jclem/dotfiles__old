@@ -1,5 +1,6 @@
 tap "heroku/brew"
 
+brew "asdf"
 brew "coreutils"
 brew "curl"
 brew "fish"
