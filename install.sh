@@ -10,5 +10,5 @@ if test -f "$dotfiles_dir/git/local"; then
 fi
 
 if [[ "$(uname)" == "Darwin" ]]; then
-    /opt/homebrew/bin/brew bundle install --no-upgrade
+    brew bundle install --no-upgrade
 fi
