@@ -8,3 +8,5 @@ set -x __fish_git_prompt_color brblack
 set -x __fish_git_prompt_color_prefix brblack
 set -x __fish_git_prompt_color_suffix brblack
 set -x __fish_git_prompt_char_stateseparator ' → '
+set -x async_prompt_functions fish_right_prompt
+set -x fisher_path "$__fish_config_dir/fisher"
