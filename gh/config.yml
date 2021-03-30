@@ -1,0 +1,5 @@
+git_protocol: https
+aliases:
+    co: pr checkout
+    open: repo view --web
+editor: code --wait
