@@ -1,5 +1,6 @@
 git_protocol: https
 aliases:
-    co: pr checkout
-    open: repo view --web
+  co: "!gh pr list | fzf --preview 'gh pr view {+1}' | cut -f1 | xargs gh pr checkout"
+  open: "!gh pr list | fzf --preview 'gh pr view {+1}' | cut -f1 | xargs gh pr view"
 editor: code --wait
+pager: delta --diff-so-fancy --side-by-side --navigate
