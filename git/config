@@ -23,6 +23,8 @@
 	path = ~/.gitconfig_local
 [init]
 	defaultBranch = main
+[push]
+	default = upstream
 [rerere]
 	enabled = true
 [user]
