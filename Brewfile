@@ -17,9 +17,11 @@ brew "hivemind"
 brew "htop"
 brew "httpie"
 brew "jq"
+brew "m4" # For tmux head
 brew "overmind"
+brew "pinentry-mac"
 brew "ripgrep"
-brew "tmux"
+brew "tmux", args: ['HEAD']
 brew "wget"
 
 cask "iterm2"
