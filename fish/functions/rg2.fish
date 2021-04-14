@@ -14,5 +14,5 @@ function rg2
         --preview 'bat --color=always {1} --highlight-line {2}' \
         --preview-window '+{2}+3/3,~3' \
         | read -d: selected
-    echo $selected[1]
+    echo $selected[1] | cut -d: -f-3
 end
