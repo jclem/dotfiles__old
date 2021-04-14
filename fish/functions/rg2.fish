@@ -12,7 +12,7 @@ function rg2
         --bind "change:reload:sleep 0.05; $RG_PREFIX {q} || true" \
         --delimiter : \
         --preview 'bat --color=always {1} --highlight-line {2}' \
-        --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+        --preview-window '+{2}+3/3,~3' \
         | read -d: selected
     echo $selected[1]
 end
