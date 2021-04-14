@@ -20,6 +20,7 @@ brew "jq"
 brew "m4" # For tmux head
 brew "overmind"
 brew "pinentry-mac"
+brew "postgresql"
 brew "ripgrep"
 brew "tmux", args: ['HEAD']
 brew "wget"
