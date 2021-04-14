@@ -4,7 +4,7 @@ function ns
     end
 
 
-    set script (cat package.json | jq -r '.scripts | to_entries[] | "\(.key) \(.value)"' | fzf | cut -d' ' -f1)
+    set script (cat package.json | jq -r '.scripts | to_entries[] | [.key, .value] | @tsv' | column -s\t -t | fzf | cut -d' ' -f1)
 
     if [ -z "$script" ]
         return 1
