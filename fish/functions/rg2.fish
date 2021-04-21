@@ -9,10 +9,10 @@ function rg2
 
     env FZF_DEFAULT_COMMAND="$RG_PREFIX (printf $INITIAL_QUERY) || true" fzf --ansi \
         --disabled --query "$INITIAL_QUERY" \
-        --bind "change:reload:sleep 0.05; $RG_PREFIX {q} || true" \
+        --bind "ctrl-j:preview-half-page-down,change:reload:sleep 0.05; $RG_PREFIX {q} || true" \
         --delimiter : \
         --preview 'bat --color=always {1} --highlight-line {2}' \
-        --preview-window '+{2}+3/3,~3' \
+        --preview-window '60%,+{2}+3/3,~3' \
         | read -d: selected
 
     set result (echo $selected[1] | cut -d: -f-3)
