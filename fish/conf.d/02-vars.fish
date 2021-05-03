@@ -1,6 +1,8 @@
 set -x CODE "$HOME/src/github.com"
 set -x ERL_AFLAGS "-kernel shell_history enabled -kernel shell_history_file_bytes 2097152"
 set -x GPG_TTY (tty)
+set -x MDMIND_ROOT "$HOME/Documents/Notes"
+set -x MDMIND_HTTP_ADDR ":9090"
 set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x __fish_git_prompt_showcolorhints true
 set -x __fish_git_prompt_use_informative_chars true
