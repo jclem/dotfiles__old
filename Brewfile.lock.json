@@ -97,7 +97,7 @@
         }
       },
       "gpg": {
-        "version": "2.2.27",
+        "version": "2.3.1",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
@@ -657,7 +657,7 @@
         }
       },
       "postgresql": {
-        "version": "13.2_1",
+        "version": "13.2_2",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
@@ -748,7 +748,7 @@
         "bottle": false
       },
       "watchexec": {
-        "version": "1.15.1",
+        "version": "1.15.3",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
