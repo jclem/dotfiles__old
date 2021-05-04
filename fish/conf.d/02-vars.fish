@@ -1,4 +1,5 @@
 set -x CODE "$HOME/src/github.com"
+set -x EDITOR "code --wait"
 set -x ERL_AFLAGS "-kernel shell_history enabled -kernel shell_history_file_bytes 2097152"
 set -x GPG_TTY (tty)
 set -x MDMIND_ROOT "$HOME/Documents/Notes"
