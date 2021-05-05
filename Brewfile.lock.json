@@ -417,7 +417,17 @@
       },
       "asdf": {
         "version": "0.8.0_1",
-        "bottle": false
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:24d40cb939c41de5c2ee5f7e52aa631884d56a0566cfc65a63bf3ddb42344d24",
+              "sha256": "24d40cb939c41de5c2ee5f7e52aa631884d56a0566cfc65a63bf3ddb42344d24"
+            }
+          }
+        }
       },
       "fzf": {
         "version": "0.27.0",
@@ -797,7 +807,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.1.5",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "cdcdd25786974b382cbd9e058923be7fc000a128",
+        "Homebrew/homebrew-core": "8444e8f373038a91783eeb767e2f6dbe68a3eb45",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.5",
         "macOS": "11.2.3"
