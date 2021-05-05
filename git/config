@@ -30,3 +30,5 @@
 [user]
 	email = jonathan@jclem.net
 	name = Jonathan Clem
+[pull]
+	ff = only
