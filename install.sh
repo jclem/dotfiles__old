@@ -23,4 +23,6 @@ fi
 
 if [[ "$(uname)" == "Darwin" ]]; then
     brew bundle install --no-upgrade
+else
+    ./install-codespaces.sh
 fi
