@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 dotfiles_dir="$(pwd)"
 
 ln -fsv "$dotfiles_dir/fish" "$HOME/.config"
