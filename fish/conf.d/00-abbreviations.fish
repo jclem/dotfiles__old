@@ -8,5 +8,6 @@ if status --is-interactive
     abbr --add --global hk heroku
     abbr --add --global ls exa
     abbr --add --global md mdmind
+    abbr --add --global tf terraform
     abbr --add --global v vercel
 end
