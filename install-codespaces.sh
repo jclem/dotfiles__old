@@ -3,7 +3,7 @@
 CI=true curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | /bin/bash
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install bat exa fd fish fzf gh httpie jq ripgrep wget
-fish -c 'curl -sL https://git.io/fisher | source && fisher update'
+$(which fish) -c 'curl -sL https://git.io/fisher | source && fisher update'
 
 # Add Homebrew fish to shells
 echo "$(which fish)" | sudo tee -a /etc/shells
