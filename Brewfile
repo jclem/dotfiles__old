@@ -25,6 +25,7 @@ brew "overmind"
 brew "pinentry-mac"
 brew "postgresql"
 brew "ripgrep"
+brew "sd"
 brew "socat"
 brew "tmux", args: ['HEAD']
 brew "watchexec"
