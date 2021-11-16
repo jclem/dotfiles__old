@@ -6,7 +6,7 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --
 	pl = pull
 	ps = push
-	pb = push --set-upstream origin (current_branch)
+	pb = push --set-upstream origin HEAD
 	st = status
 [bash]
 	showDirtyState = true
