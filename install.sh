@@ -3,6 +3,7 @@
 set -e
 
 dotfiles_dir="$(pwd)"
+mkdir -p "$HOME/.config"
 
 ln -fsv "$dotfiles_dir/fish" "$HOME/.config"
 ln -fsv "$dotfiles_dir/git" "$HOME/.config"
