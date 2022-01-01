@@ -1,19 +1,19 @@
 # Clone a repository, if necessary, and CD into it
 function r
-    argparse --name=r h/help t/no-tmux d/no-cd -- $argv
+    argparse --name=r h/help t/tmux d/no-cd -- $argv
 
     if set -q _flag_h
         or test (count $argv) -lt 1
         echo "\
 Usage: r <owner> [<repo>] [<option>] 
-Clone a GitHub repository, if necessary, and CD into its directory. Then,
-create a tmux session for it or attach to an existing one.
+Clone a GitHub repository, if necessary, and CD into its directory. If given
+-t/--tmux, create a tmux session for it or attach to an existing one.
 Flags can be passed to `git clone` by separating flags with `--`, for example:
     r jclem workspace -- --depth=1
 Options
-    -h/--help    Print this help message
-    -t/--no-tmux Do not open a tmux session
-    -d/--no-cd   Do not change the directory after cloning"
+    -h/--help  Print this help message
+    -t/--tmux  Open a tmux session
+    -d/--no-cd Do not change the directory after cloning"
 
         return 0
     end
@@ -37,7 +37,7 @@ Options
         return $status
     end
 
-    if set -q _flag_t
+    if ! set -q _flag_t
         cd $repo_path
         return $status
     end
