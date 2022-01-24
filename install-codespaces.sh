@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -eou pipefail
+set -eux
+set -o pipefail
 
 CI=true curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | /bin/bash
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
